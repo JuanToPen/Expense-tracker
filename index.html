@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <div id="interaction">
+    <h2>Add a New Item</h2>
+    <p class="name"><span id="nameText">Name: </span><input type="text" id="name" placeholder="Where was the expense made?"></p>
+    <div id="container">
+    <p class = "date"><span id="dateText">Date: </span><input id="date" type="date"> </p>
+    <p class="amount" id="text"><span id="amountText">Amount: </span> <input id="amount" type="text" placeholder="Price in dollars"> </p>
+    </div>
+    <button id="button">Add expense</button>
+    </div>
+    <table id = "tracker">
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th></th>
+        </tr>
+        <tr id = "preview">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <table id = "totalTable">
+            <td id="total"><span id="sumText"></span><span id="number"></span></td>
+    </table>
+    <script src ="index.js"> </script>
+</body>
+</html>
